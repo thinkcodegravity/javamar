@@ -69,4 +69,144 @@ facebookAccount
 	
 	
 	
+Programs
+	has-a : attributes
+	does-a : activity
+
+Programs
+	information
+	process Information - instruction on how to process information
+
+Machines/devices
+	memory
+	cpu - process instruction
 	
+
+uid/pwd login
+shopping
+credit payment
+crypto payment
+facial recog
+fingerprint scan
+product
+iphone
+gmail login
+samsung
+login
+payment
+
+Iphone IS-A Product
+uid/pwd login IS-A Login
+facial recog IS-A Login
+fingerprint scan IS-A Login
+credit pay IS-A Payment
+
+Iphone inherits from Product
+UIDPwdLogin inherits from Login
+FacialRecog inherits from Login
+
+
+Iphone 10 = 14 feature
+Iphone 11 = 15 features
+
+Reusability
+
+payment
+	credit
+	debit
+	paypal
+	crypto
+	
+Payment
+	collects shipping address
+	collect email and phone for promotoinal offers
+		
+Credit inherits Payment	
+	code to transfer credit card
+debit inherits Payment	
+	code to transfer debit card
+paypal inherits Payment	
+crypto inherits Payment	
+	
+	
+	
+libraries - composition - HAS-A relationship
+	library program has functionality that accepts
+		crypto wallet
+inheritrance - IS-A relationship
+	
+	
+
+BankAccount
+	Variable/has-A = balance, customerName, accountNumber, accountType,
+		customerAddress
+	*********** 
+	What is the data-type of value you would store
+		Simple/Primitive data type = single valued information
+			number	= byte, short, int, long
+			fraction number = float, double
+				float amazonProductPrice; 99.99 cent smallest fraction of $
+				
+			1 character = char
+			Yes/no answer = boolean
+		
+		Complex/Object data type = has sub information
+			group of characters = String
+			complex = create another program <anotherprogram> (has-a exercise)
+				anotherprogram attribute_name=new anotherprogram();
+	*********** 
+	int balance;
+	String customerName;
+	long accountNumber;
+	String accountType;
+	customerAddress
+		int streetNumber;
+		String streetName;
+		short aptNumber;
+		String city;
+		String state;
+		int zip;
+		String country;
+	
+		
+	byte = 1 byte in memory	-128 to 127
+	short = 2 bytes 			-32768 to 32767
+	int = 4 bytes			-2billion to 2 billion
+	long = 8 bytes			millions of trilliions
+	
+	
+	FB software - 4 billion customers
+	int MonthOfbirth; = 16GB = 4 billion times 4 byte(int)
+	byte MonthOfbirth; = 4GB = 4 billion times 1 byte(byte)
+	
+	
+	
+	
+
+computer device
+	Memory = store information
+	CPU = processing information
+	
+bankAccount Program
+	(Memory) has-A : money, account number
+	(CPU) does-A : withdraw, deposit
+	
+	
+BankAccount
+	HAS-A
+	balance=100
+	account =1234
+	
+	DOES-A
+	withdraw ( 10 )
+		LOGIC
+		deduct the above amount from balance. 90
+	deposit ( 20)
+		LOGIC
+		add teh above amount to balance. 120
+	
+	
+bankAccount Program
+	VARIABLE : something that changes
+	(Memory) has-A : balance, account number
+	(CPU) does-A : withdraw, deposit
