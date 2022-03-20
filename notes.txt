@@ -167,14 +167,14 @@ BankAccount
 		String state;
 		int zip;
 		String country;
-	
+	99999
 		
-	byte = 1 byte in memory	-128 to 127
+	byte = 1 byte in memory		-128 to 127
 	short = 2 bytes 			-32768 to 32767
-	int = 4 bytes			-2billion to 2 billion
-	long = 8 bytes			millions of trilliions
+	int = 4 bytes				-2billion to 2 billion
+	long = 8 bytes				millions of trilliions
 	
-	
+	2234567890
 	FB software - 4 billion customers
 	int MonthOfbirth; = 16GB = 4 billion times 4 byte(int)
 	byte MonthOfbirth; = 4GB = 4 billion times 1 byte(byte)
@@ -210,3 +210,10 @@ bankAccount Program
 	VARIABLE : something that changes
 	(Memory) has-A : balance, account number
 	(CPU) does-A : withdraw, deposit
+
+
+
+
+
+
+
