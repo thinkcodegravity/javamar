@@ -214,6 +214,59 @@ bankAccount Program
 
 
 
+conditional AND
+true and true = true
+true and false = false
+false and true = false 
+false and false = false
+
+LHS or RHS can be a boolean variable or operator that provides boolean output
+							( equality/ relational )
+
+conditional OR
+true or true = true
+true or false = true
+false or true = true
+false or false = false
+
+
+1+2-3*4 = 0 left to right
+1+2-3*4 = 11 right to left
+
+operator priority or precedence
+1) ()
+2) * / 
+3) + -
+4) relational > < 
+5) equality == !=
+6) && ||
+7) if u have more than 1 operators on same level ( left to right )
+
+1 * (2 + 3 )  > 5 && 4 / (3-1 ) == 2
+1 * 5   > 5 && 4 / (3-1 ) == 2
+1 * 5   > 5 && 4 / 2 == 2
+5   > 5 && 4 / 2 == 2
+5   > 5 && 2 == 2
+false && 2 == 2
+false && true
+false
+
+operator priority or precedence
+1) ()
+2) * / %
+3) + -
+4) if u have more than 1 operators on same level ( left to right )
+
+(1+2) * 5 - ( 4 -2) * 2 / 2
+3 * 5 - ( 4 -2) * 2 / 2
+3 * 5 - 2 * 2 / 2
+15  - 2 * 2 / 2
+15  - 4 / 2
+15  - 2
+13
+
+
+
 
 
 
