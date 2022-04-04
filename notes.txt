@@ -267,6 +267,101 @@ operator priority or precedence
 
 
 
+BankAccount
+	****HAS-A****
+	balance=100
+	account =1234
+	
+	****DOES-A****
+	withdraw ( 10 )
+		****LOGIC****
+		deduct the above amount from balance. 90
+		USES OPERATORS AND CONTROL FLOWS
+
+
+for ( initialization ; condition check ; modification ){
+	// Execute repetetive block of code
+}
+// infinite loop
+for ( int i=0; i>20 ; i++){
+	sysout("hi");
+}
+
+for ( int i=0; i<5 ; i++){
+	sysout("begin");
+	if (i==2)
+		break;
+	sysout("end");
+}
+
+Continue : moves on/continue with next loop. 
+	skips all remaining line in current loop.
+Break : EXIT loop
+
+ICE	:	i=0 , true, print begin. print end
+MCE 	:	i=1 , true, print begin. print end
+MCE 	:	i=2 , true, print begin.
+MCE 	:	
+MCE 	:
+
+FOR : fixed number of loops
+WHILE : 0 or more loops
+	shopping add 2 cart
+DO-WHILE : 1 or more loops
+	ATM
+	
+while(condition check){
+	
+}
+do{
+	
+}while(condition check);
+
+int sw=5000000;
+if( sw==1 )
+	System.out.println("inside 1 case");
+else if( sw==2)
+	System.out.println("inside 2 case");
+else if( sw==3)
+	System.out.println("inside 3 case");
+.......
+else if( sw==1000000)
+	System.out.println("inside 4 case");
+else
+	System.out.println("dfault case");
+
+int sw=500000;
+switch(sw) {
+	case 1:
+		System.out.println("inside 1 case");
+		break;
+	case 2:
+		System.out.println("inside 2 case");
+		break;
+	case 3:
+		System.out.println("inside 3 case");
+		break;
+	........
+	case 1000000:
+		System.out.println("inside 4 case");
+		break;
+	default:
+		System.out.println("default case");
+		break;
+		
+}
+
+if-else is slow in performance
+	
+when to use switch case
+	when comparing int like primitive data, string value
+when to use if-else
+	when required multiple conditino check, 
+	when required conditional or relational operator
+	
+		
+
+
 
 
 
