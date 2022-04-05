@@ -362,6 +362,38 @@ when to use if-else
 		
 
 
-
+Backward Compatibility = 1.8 
+IIphone
+	public void call();
+	public void text();
+	public void browse();
+	default void map()// default method is the solution for backward compatibility
+	{
+		asdasdasdas
+	}
+	// default created new problem.. diamond problem is back
+Iphone implements IIphone == 
+	public void call(){
+		sdfdsf
+	}
+	public void text(){
+		sdfsdf
+	}
+	public void browse(){
+		sdfsdf
+	}
+Iphone3 extends Iphone == incomplete program , crash, error
+	public void camera(){
+		adads
+	}
+Iphone6 extends Iphone == incomplete program , crash, error
+	public void fingerprintScan(){
+		adads
+	}
+Iphonex extends Iphone == incomplete program , crash, error
+	public void facialRecognition(){
+		adads
+	}
+FORWARDING LOOKING EVOLUTION
 
 
