@@ -394,6 +394,286 @@ Iphonex extends Iphone == incomplete program , crash, error
 	public void facialRecognition(){
 		adads
 	}
-FORWARDING LOOKING EVOLUTION
+FORWARD LOOKING EVOLUTION
 
 
+
+Nissan Altima Model S : 20,000$
+	doors,windows,seat,AC,Engine
+Nissan Altima Model SV : 22,000$
+	doors,windows,seat,AC,Engine,Music player
+Nissan Altima Model SR : 24,000$
+	doors,windows,seat,AC,Engine,Music player, Parking Sensors
+Nissan Altima Model Platinium :  28,000$
+	doors,windows,seat,AC,Engine,Music player, Parking Sensors, LCD display Screen
+
+
+Manufacturing Option 1 :
+	4 Big manufacturing factories. 1 for each model
+	Issues :
+		If need any new feature for all model.. like new headlights
+			additional investment for new feature in all 4 big factories
+			additional labors in all 4 factories
+		If need to modify existing features.. like more safer windows in all Cars
+			Alterations in window feature in all 4 big factories
+			additional labors training in all 4 factories
+
+Manufacturing Option 2 : GENERALIZATION
+	1 Big manufacturing factories. that builds all the COMMON features in all models
+	3 small factories for specific add-ons like music, parking sensors and lcd display screen
+	
+	Solution:
+		If need any new feature for all model.. like new headlights
+			additional investment for new feature in all 4 big factories
+			NEED TO MAKE CHANGES IN 1 FACTORY ONLY
+			additional labors in all 4 factories
+			NEED LABORS IN 1 FACTORY ONLY
+		If need to modify existing features.. like more safer windows in all Cars
+			Alterations in window feature in all 4 big factories
+			NEED TO MODIFY WINDOW ASSEMBLY IN 1 FACTORY ONLY
+			additional labors training in all 4 factories
+			NEED TO RE-TRAIN LABORS IN 1 FACTORY ONLY
+	
+	
+	
+public interface IPayment {
+	public void collectShippingAddress();
+	public void collectContactInfo();
+	public void payment();
+	public void subscription();
+}
+
+public class CreditCard implements Ipayment{
+	public void collectShippingAddress(){
+		adssadasd
+	}
+	public void collectContactInfo(){
+		collect phone & email
+	}
+	public void payment(){
+		adssadasd
+	}
+	public void subscription(){
+		sdsdf
+	}
+}
+public class Paypal implements Ipayment{
+	public void collectShippingAddress(){
+		adssadasd
+	}
+	public void collectContactInfo(){
+		collect phone & email
+	}
+	public void payment(){
+		adssadasd
+	}
+
+	public void subscription(){
+		sdsdf
+	}
+
+}
+public class Crypto implements Ipayment{
+	public void collectShippingAddress(){
+		adssadasd
+	}
+	public void collectContactInfo(){
+		collect phone & email
+	}
+	public void payment(){
+		adssadasd
+	}
+
+	public void subscription(){
+		sdsdf
+	}
+
+}
+public class Cash implements Ipayment{
+	public void collectShippingAddress(){
+		adssadasd
+	}
+	public void collectContactInfo(){
+		collect phone & email
+	}
+	public void payment(){
+		adssadasd
+	}
+
+	public void subscription(){
+		sdsdf
+	}
+}
+
+
+
+****************** abstract (generalization) **************
+
+
+
+
+public interface IPayment {
+	public void collectShippingAddress();
+	public void collectContactInfo();
+	public void payment();
+	public void subscription();
+}
+public abstract class APayment implements IPayment{
+	public void collectShippingAddress(){
+		aasdsad
+	}
+	public void collectContactInfo()[
+		phone & email
+	}
+	public void subscription(){
+		asdsadad
+	}
+}
+public class CreditCard extends Apayment{
+	public void payment(){
+		adssadasd
+	}
+}
+public class Paypal extends Apayment{
+	public void payment(){
+		adssadasd
+	}
+}
+public class Crypto extends Apayment{
+	public void payment(){
+		adssadasd
+	}
+}
+public class Cash extends Apayment{
+	public void payment(){
+		adssadasd
+	}
+}
+public class DebitCard etends Apyament{
+	public void payment(){
+		debit card payment
+	}
+}
+
+
+
+
+Student s=new Student();
+BankAccount b=new BankAccount();
+
+IPayment > APayemnt > CreditCard/Crypto/Debit
+IIphone > AIphone > Iphone3/Iphone4/IphoneX
+
+LHS and RHS same inheritance chain
+RHS has to be concrete program
+RHS should be child of LHS
+
+IIphone iip=new CreditCard()// NO because not from same inheritance
+IIphone iip=new AIphone()// NO beacuse same chain but RHS not concrete
+IIphone iip=new Iphone3
+IIphone iip=new Iphone4
+IIphone iip=new IphoneX
+
+
+******************** 2 programs communicate/connect with each other *******
+
+HAS-A relationship = reference variable created
+IS-A relationship = inheritnace link
+	Iphonex is-a iphone // correct... iphone is parent of IphoneX
+	Iphonex is-a Nissan // wrong... no inheritnace link
+	public class IphoneX extends Iphone{
+	
+	}
+
+	Nissan is-A Engine // Wrong... no inheritnace
+	Nissan has-A Engine// correct
+	
+	public class Nissan{
+		Engine e=new Engine
+		Wheel w=new Wheel
+		Seats s=new Seats
+	}
+
+
+
+
+**************** access privilege ********
+
+packages : organize code 
+
+
+www.amazon.com
+
+com.amazon.www.login
+	login.java
+	register.java
+	forgotUserid.java		
+com.amazon.www.shopping
+	
+	public class add2Cart{
+		checkOut co=new checkOut();
+	}
+	
+	import com.amazon.www.payment.Credit;
+	public class checkOut{
+		Credit c=new Credit.java
+	}	
+com.amazon.www.payment
+	credit.java
+	Crypto.java
+amazon.ios.shopping
+amazon.android.shopping
+
+
+has-a = reference variables
+is-a = extends inheritnace
+
+package1 accessAndPoly.samePack
+	Parent.java
+	Child1 IS-A Parent
+	Other1 HAS-A Parent
+
+package2 accessAndPoly.differentPack
+	Child2 IS-A Parent
+	Other2 HAS-A Parent
+
+
+access privleges - variable/methods and constructors
+
+Payment ( String creditCardNum, String exp,String secCode)
+Payment ( String payPalUserid,String password)
+Payment ( String cryptoWallet)
+
+polymorphism : many forms
+Doing ssame thing in multiple ways
+
+
+CompileTime polymorphism - OverLOADED method
+	you know the method being called during compile time
+	payment("asd","asd"); // 2 method is being called
+	1) method name should be same
+	2) input should be different
+	3) can happen in same program or between parent and child program
+	
+Runtime polymorphism - OVERRIDING method
+	WHEN TO
+		If child program has better solution for a method than parent program
+	HOW TO
+	you know the method being called only in run time
+	1) method name should be same
+	2) input should be same
+	3) can happen between parent and child program
+	
+New rule for assignmennt = operator
+	LHS and RHS same inheritance chain
+	RHS has to be concrete program
+	RHS should be child of LHS
+
+New rule for method call
+	we can pass any variable that is in same inheritnace chain
+	and is a child of target data type
+	
+	
+	
+	
+	
