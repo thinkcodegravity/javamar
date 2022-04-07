@@ -17,7 +17,6 @@ public class FBAccount {
 	public FBAccount(String n) {
 		name=n;
 	}
-
 	public int add(int a, int b,String c) {
 		return 1;
 	}

@@ -27,6 +27,10 @@ public class TestPoly {
 		}
 	}
 	public static void testdrive(Car c) {
+		if(c instanceof Nissan)
+			System.out.println("nissan variabel is passed");
+		if(c instanceof Ferrari)
+			System.out.println("Ferrari variabel is passed");
 		c.drive();
 	}
 }

@@ -672,8 +672,70 @@ New rule for assignmennt = operator
 New rule for method call
 	we can pass any variable that is in same inheritnace chain
 	and is a child of target data type
-	
-	
-	
-	
-	
+
+Car > BasicCar > Nissan/Ferrari
+Iphone > Iphone3> IphoneX
+
+Car car=new Car();
+Nissan n=Nissan();
+Ferrari f=new Ferrari();
+IphoneX ix=new IphoneX();
+
+test(car, 10); // any variable of same type
+test(n,10); // n is Nissan data type.. 1) Nissan is in same inheritnace chain
+			2) as Car... Nissan is the child of Car
+public void test(Car c,int b){
+
+}
+
+instanceof operator can be used to find the real instance passed in runtime.
+
+******************STATIC**********************
+
+class members - variable and methods					
+************** When To *************					
+if a variable information is common or need to be shared declare as static					
+If a method does NOT access any other non static member of the class					
+************** access limitation **************					
+static member can use another static member					
+*************************************					
+DO NOT CREATE REFERENCE TO ACCESS STATIC VARIABLE OR METHODS					
+*****************************************					
+					
+					
+****************** FINAL ***********************
+
+Final = Unchageable (OOP concept killer)
+
+Variable = something that changes
+	final int a=10; // u cannot change value
+	public class company{
+		final String name="amazon";
+		public void method(){
+			name="garbage company";
+		}
+	}
+Method = overriding Polymorphism
+	overriding = allows u to provide better solution to a method 
+		than your parent class ( CHANGING PARENT's METHOD)
+		
+	// 1 ,5
+	// 1 + 5 = 6
+	// PERFECT SOLUTION FOR ADDING 2 NUMBERS
+	// AND IT WILL NEVER CHANGE IN FUTURE		
+	public final int add(int a, int b)// no more polymorphism ( change solution)
+	{
+		
+	}
+Class = helps with inheritance (reusability)
+	if the entire program has perfect solution in each method... dclared entire class as final
+	public final class calculator// u cannot inherit
+
+JDK Library programs provided to us such as String, System, ArrayList
+they are Final.. java founders doesnt wish to change these programs by us.
+
+
+
+
+
+
