@@ -770,10 +770,87 @@ FacebookCustomer allCustomers9;
 
 
 
+************** Exception handling ****************
+
+Exception handling provides Programs with ability to recover/take actions
+in the event of a failure
+
+Developers
+	Need the insight on where / what caused the failure
+	Need ability to provide series of steps to fix the problems
+	
+Customers :
+	Customer need not be shown a technical error message in the event of failure
+	need to provide a simple error message or instructions that could be used to
+	take appropriate actions to fix the failure.
+
+Program failure Category :
+	Exception : programming mistake , logical flaw in programming. these can be easily recovered.
+	Error : SEVERE. cannot recover. 
+	
+Exception program heirarchy
+
+Exception handling blocks
+try = 
+catch
+finally
+
+try catch
+try finally
+try catch catch
+try catch catch finally
 
 
 
 
+multiple catch blocks
+ATM
+	try{
+		swipe your card... atm card is damged
+		please enter 4 digit pin...  pin is wrong
+		enter withdraw amount... enough bank balance
+	}
+	catch(invalidPinFailure){
+		please check your pin and try again
+	}
+	catch(invalidCardFailure){
+		please dial 1800 nummber and rquest for new card
+	}
+	catch(insufficientFundFailure){
+		please withdraw amount within your balance
+	}
+	catch(UnknownFailure){
+		sorry for the inconvienince please try again later
+	}
+	finally{
+		thank you for using java bank
+	}
+	
+try-catch = way to handle the potential failure YOURSELF
+throws = way to let SOMEONE ELSE handle the failure
+	Program/line that calls this method
 
 
 
+
+java.io.IOException: The system cannot find the path specified..   WHAT IS THE PROBLEM ???
+	at arraysAndExcceptions.TestExce.method3(TestExce.java:20) WHERE DID it HAPPEN ???
+	at arraysAndExcceptions.TestExce.method2(TestExce.java:14)
+	at arraysAndExcceptions.TestExce.method1(TestExce.java:9)
+	at arraysAndExcceptions.ExceptionTest2.main(ExceptionTest2.java:11) WHERE IT BEGAN ???
+
+
+
+
+User defined exceptions
+program might HAVE TO fail because of Business limitations
+
+// int range = from -2 billion to +2billion
+int bankBalance=100;
+int withdrawAmount=200;
+
+bankBalance=bankBalance-withdrawAmount;
+100-200=   -100
+NO TECHNICAL LIMITATION
+but BANK BUSINESS DOES NOT WANT TO ALLOW
+NEGATIVE NUMBER IN BANK BALANCE
