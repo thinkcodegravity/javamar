@@ -1,4 +1,4 @@
-package stringThreads;
+package string;
 
 public class StringTesting {
 
