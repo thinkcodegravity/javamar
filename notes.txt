@@ -857,6 +857,30 @@ NEGATIVE NUMBER IN BANK BALANCE
 
 
 
+************** Threads **************
+
+Java by default is Sequential programming
+	method calls transfer control to another program
+	caller program is put on pause until the callee program returns back the control
+Threads allow multiple programs run parallely side by side
+CPU are responsible for processing each thread program code/instructions
+CPU switch between multiple programs at a high speed giving the illusion of multiple program execution parallely
+
+5/17
+Apple showroom - Iphone 
+	Out of stock
+	
+	
+Response 1 : 
+Apple staff : 5/20 - We will have iphone (TIMED WAITING)
+
+Response 2 :
+Apple staff : not sure when stock will be filled. U provide phone number.
+	We will NOTIFY/call back to you whenever we have iphone (WAITING)
+	
+	
+Synchronize watch = military
+Time each other
 
 
 
