@@ -884,3 +884,18 @@ Time each other
 
 
 
+********* collection ***********
+
+arraylist - indexed... good for reading
+vector - indexed and synchronized.... good for MultiThread program
+linkedlist - linkedlist.. good for Editing
+
+HashSet - unique... fastest... unordered
+LinkedHashSet - unique.... ordered
+TreeSet - unique... sorted(slowest)
+
+
+Restaurant order display  - TreeSet - alphabetically...
+	LinkedHashSet - best
+
+
