@@ -899,3 +899,66 @@ Restaurant order display  - TreeSet - alphabetically...
 	LinkedHashSet - best
 
 
+
+int : data type - what type of value u can store in this variable a
+a : variable
+20 : value/data
+
+variable = store information (age)
+data type = What type/kind of information(int = can store number type infor)
+21 = value/data/information
+int age=21; // customer age, 21 is customer info, 21 is cusomter's data
+int age="five";
+
+String is a data tyep that allows alphabet, number,special character
+values are written insidde a double quote
+String name=12;
+
+int a; // declaration is line... where u announce/declare what can variable store
+a=10; // initialization ... when u assign a value to a variable for the FIRST time
+a=20; // reassignment... change or overwrite the initial value on a variable
+
+Left Hand Side . Right Hand Side
+LHS=RHS
+ALWAYS PROCESS RHS first
+1) LHS should always be a variable
+2) RHS can be 
+	value of same type
+	variable of same type = replace its value
+	method call = assign returned result to LHS variable
+	expression = solve expression to a single value
+	new operator = Object data type initialization.. address where object
+				was created in memory.. (Reference)
+3) RHS is always resolved to single value
+i=i+2;
+i=1+2;
+i=3;
+
+variable =  varies = change = (CHANGES VALUE over the time)
+int a=10;
+int b=20;
+a=b; // a=20;
+a=add(25,35); // add returned 60 result.. 60 results is now transfered to LHS variable a
+	// a= result of add... 
+	// a=60;
+a= 10 + 20 - b;
+// a= 10 + 20 - 20;
+// a=	10
+Student s=new Student(); // Student s=#qwecad123sf
+
+public int add(int x,int y){ x=25 , y=35
+	return x+y; // 25 + 35 // 60
+}
+
+int res=sub(45,35);  // METHOD CALLED - CUSTOMER
+// sub(45,35);  = METHOD CALL/INVOCATION
+
+// METHOD/SERVICE PROVIDER - Business
+// METHOD DECLARATION = announce how can customers use my world famous sub software
+public int sub(int x,int y){ // METHOD BODY/ DEFINITION/ LOGIC /ALGORITHM
+	
+	return x-y; 
+}
+
+
+REFERNCE
