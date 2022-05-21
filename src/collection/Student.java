@@ -3,10 +3,13 @@ package collection;
 public class Student implements Comparable<Student> {
 	int grade;
 	String fullName;
+	
 	public Student(String fn,int g) {
 		grade=g;
 		fullName=fn;
 	}
+
+	
 	// categorization
 	public int hashCode() {
 		return grade;
@@ -29,11 +32,12 @@ public class Student implements Comparable<Student> {
 	
 	public int compareTo(Student anotherObject)
 	{	
+		//int difference= this.grade - anotherObject.grade;
 		int difference= this.fullName.compareTo(anotherObject.fullName);
 		return difference;
 		 
 	}
-	
+
 }
 
 

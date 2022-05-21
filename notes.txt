@@ -894,11 +894,37 @@ HashSet - unique... fastest... unordered
 LinkedHashSet - unique.... ordered
 TreeSet - unique... sorted(slowest)
 
-
 Restaurant order display  - TreeSet - alphabetically...
 	LinkedHashSet - best
 
 
+HashMap - unordered key
+LinkedHashMap - ordered key
+TreeMap - sorted key
+HashTable- works like hashmap it is synchronized
+
+TreeMap<Integer,Student> registration=new TreeMap<Integer,Student> ();
+
+Student = does it need hashCode() and equals() and compareTo()
+
+When do we write code for hashCode() and equals() method
+1) if you store user-defined data type in Set
+2) if you store user-defined data type in Key section of a map
+
+when do we write code for comparable interface (compareTo)
+1) if you store user-defined data type in TreeSet
+2) if you store user-defined data type in Key section of a Treemap
+
+primitive data type = int , float , double
+in-built object data type = String,System ( program already provided through jdk library/installation)
+userdefined data type = Student, Restaurant
+
+
+NO NEED = ArrayList<Student> school=new ArrayList<Student> ();
+	
+UNIQUE = (hashCode , equals) SORTING = compareTo 
+
+**********************REVISION************
 
 int : data type - what type of value u can store in this variable a
 a : variable
@@ -962,3 +988,8 @@ public int sub(int x,int y){ // METHOD BODY/ DEFINITION/ LOGIC /ALGORITHM
 
 
 REFERNCE
+
+
+
+
+

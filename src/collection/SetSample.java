@@ -12,7 +12,7 @@ public class SetSample {
 		System.out.println("\n \n \n");
 		// List has 3 types - arraylist,linkedlist and vector.
 		//HashSet<String> studentsCollection=new HashSet<String> ();
-		LinkedHashSet<String> studentsCollection=new LinkedHashSet<String> ();
+		HashSet<String> studentsCollection=new HashSet<String> ();
 		//TreeSet<String> studentsCollection=new TreeSet<String> ();
 		
 		// add items to list collection

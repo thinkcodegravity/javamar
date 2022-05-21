@@ -23,6 +23,7 @@ public class HashSample {
 		studentPercent.put("bharat", 55);
 		studentPercent.put("shyam", 45);
 		
+		int shyamValue=studentPercent.get("shyam");
 		// get size of hash
 		int studentSize=studentPercent.size();
 		System.out.println("hash : number of students :"+studentSize);
